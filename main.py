@@ -14,12 +14,12 @@ class Settings(BaseSettings):
 # instancia para las settings del programa
 settings = Settings()
 
-app = FastAPI()
+app = FastAPI(tags=["Home"])
 
-from routers import jwt_auth, users, products
+from routers import jwt_auth, products, users_db
 
 # routers
-app.include_router(users.router)
+app.include_router(users_db.router)
 app.include_router(products.router)
 app.include_router(jwt_auth.router)
 

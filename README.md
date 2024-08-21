@@ -1,4 +1,4 @@
-"basic ToDo list API with FastAPI and online MONGODB"
+"basic API with FastAPI and local MONGODB"
 
 Descargar repositorio
 Crear VENV
